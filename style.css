@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.carrossel-images {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-images .slide {
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-images .show-image {
+    opacity: 1;
+}
+
+.slide-pink {
+    background: url('./images/imagem0.png') center center no-repeat;
+}
+
+.slide-green {
+    background: url('./images/imagem1.png') center center no-repeat;
+}
+
+.slide-orange {
+    background: url('./images/imagem2.png') center center no-repeat;
+}
+
+.slide-blue {
+    background: url('./images/imagem3.png') center center no-repeat;
+}
+
+.previous-arrow, .next-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
+.previous-arrow {
+    left: 4%;
+    transform: rotate(180deg);
+}
+
+.next-arrow {
+    right: 4%;
+}
+
+.img-arrow {
+    width: 55px;
+    height: 75px;
+}
+
+.opacity {
+    opacity: .6;
+    cursor: default;
+}
+
+.content {
+    background-color: #fff;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
+    border-radius: 10px;
+}
+
+.content .title {
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.content a {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.button.pink {
+    color: #C50000;
+}
+
+.button.green {
+    color: #D9DD10;
+}
+
+.button.orange {
+    color: #A63A17;
+}
+
+.button.blue {
+    color: #10ACDD;
+}
